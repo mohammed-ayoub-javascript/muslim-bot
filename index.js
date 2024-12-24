@@ -28,7 +28,7 @@ client.on('messageCreate', (message) => __awaiter(void 0, void 0, void 0, functi
         return;
     console.log(`الرسالة الواردة من ${message.author.tag}: ${message.content}`);
     try {
-        const genAI = new GoogleGenerativeAI("AIzaSyDxSmSWdw5LEAjZkKoj1f3RTzAgIUpISCA");
+        const genAI = new GoogleGenerativeAI("YOUR_API_KEY");
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
         const prompt = `
       مرحبا ، انت الان المطلوب من قراءة الجملة التالية و ترجع ب true او false فقط 
