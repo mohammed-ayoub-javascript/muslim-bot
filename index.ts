@@ -23,7 +23,7 @@ client.on('messageCreate', async (message: Message) => {
     console.log(`الرسالة الواردة من ${message.author.tag}: ${message.content}`);
   
     try {
-      const genAI = new GoogleGenerativeAI("AIzaSyDxSmSWdw5LEAjZkKoj1f3RTzAgIUpISCA");
+      const genAI = new GoogleGenerativeAI("YOUR_API_KEY");
       const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
   
       const prompt = `
